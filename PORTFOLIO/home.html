@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Jain</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/icon type">
+    <script src="https://kit.fontawesome.com/e45c05ea93.js" crossorigin="anonymous"></script>
+    
+    
+
+</head>
+<body>
+<div id ="header">
+    <div class = "container">
+        <nav>
+            <img src="favicon.ico" class = "logo">
+            <ul id = "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi there 👋,<br><span> Shruti Jain</span><br>this side</h1>
+        </div>
+    </div>
+
+</div>
+
+<!-- -----------------about----------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user1.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h2 class="sub-title">About me</h2>
+                <p class ="sub-para">
+                    A web Developer &  passionate Java/C++ coder with ability to apply techniques & algorithms, 
+                    a good problem solver and avid multitasker. 
+                    Love to connect with new people, solve real world industry problems and contribute to the establishment in long-term success.
+                    
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="I.T. skills">
+                    <ul>
+                        <li><span> - DBMS</span>
+                        <li><span> - HTML, CSS, JavaScript</span>
+                        <li><span> - Java(Core)</span>
+                        <li><span> - C/C++</span>
+                        <li><span> - Ms- Word, Excel PowerPoint</span>
+                       <!-- <li><span> - UCMAS - Abacus</span> -->
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>Internship Codsoft </span><br>Presently running<br> - Program based on web development<br></li>
+                        <li><span>Volunteer - NGO</span><br>Dec'21 - Feb'22<br> - Volunteered for NGO Muskurahat Foundation</li>
+                        <li><span>Campus Ambassador - Internshala </span><br>May '20 - Aug'20<br> - Helped students to know about Internshala and find internship</li>
+                      <!--  <li><span>Event Organised - Enigma 2k19</span><br>May'21 - July'21<br> - Covid-19 Report – Visualization & forecasting</li> -->
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents", id = "education">
+                    <ul>
+                        <li><span>Shri Govindram seksaria institute of technology and science, Indore </span><br>Rajeev Gandhi proudyogiki vishwavidyala<br>M.C.A - Pursuing<br>2019 - '23<br> 9.33 (Semester 1)</li>
+                        <li><span>Institute for excellence in higher education, Bhopal</span><br>Barkatullah University<br>2018 - '21<br> 83.90</li>
+    
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------portfolio------------------------------------------------------------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class ="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work" id="a">
+                <img src="work-1.jpg" >
+                
+              <!-- <div class="layer">
+                    <h2>Cloud Based Face Attendace</h2>
+                    <p>In this project, used a straightforward yet effective facial recognition algorithm
+                         which uses the HOG method to detect faces on the given picture. Afterwards, 
+                         it detects 68 specific points on the face called the landmark which helped to
+                          locate the face regardless of the position in the picture. 
+
+                        Boto3 python sdk helps in fetching, querying and storing data.
+                        When the face is identified and recognized, it marks the attendance 
+                         and upload the results. The file is saved inside the directories in hirarchy format of 
+                         Y/M/D (necessarily in that order)
+
+                    </p>
+                    <a href="https://github.com/jainharshit3107/CloudBasedFaceAttendace"target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> -->
+
+
+            </div> 
+            <div class="work">
+                <img src="PROJ-2.jpg" >
+                <div class="layer">
+                    <h2>Indian Tourism website</h2>
+                    <p> The project guides people for the tourist places of India. Apart form this it also tells about Indian heritage, sprituality, hotels etc.
+                        It's a static website was made using HTML, CSS in Sublime Text Editor(IDE).</p>
+                    <a href="https://github.com/Shrutijain-tech/Indian_Tourism_Website"target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="work" id="b">
+                
+               <!-- <img src="work-3.jpg">
+                <div class="layer">
+                    <h2>Covid-19 Visualization & forecasting </h2>
+                    <p> Made project as a part of internship, using of the Machine learning and Visualizing tools
+                        we have created a small project on Covid-19. To help us in understanding the covid-19 betterly using Google Colab and Tableau. </p>
+                    <a href="https://github.com/jainharshit3107/Covid-19_DS_project"target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> -->
+            </div> 
+        </div>
+        <p style="text-align: center; margin-top: 40px; font-size: large;">Working on more projects. Will upload as soon as completed.</p>
+        <a href="#" class="btn">Projects available on Github</a>
+    </div>
+</div>
+
+<!-- -----------Contact------------------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1> 
+                <p><i class="fa-solid fa-paper-plane"></i>jshruti434@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>7974060134</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/shruti_sj2000?igshid=ZDdkNTZiNTM="target = "_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shruti-jain-7b3707153"target = "_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://github.com/Shrutijain-tech"target = "_blank"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="Shruti_Jain(resume).pdf" download class="btn btn2">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name = "contact form">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                    <button type = "submit" class = "btn btn2">Submit</button>
+                </form>
+                <span id = "msg">
+                </span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> 2023 Shruti Jain</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    } 
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwsNrHv9WhC-hHhdTgRBq4I7cC9Ldk_UTC28O7NOT4vLq4oFHd06aepqbllY7DCkmDK/exec'
+  const form = document.forms['contact form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML = "Message sent successfully"})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+      form.reset()
+
+  })
+  </script>  
+</body>
+</html>
